@@ -27,30 +27,6 @@
         </license>
     </licenses>
 
-    <scm>
-        <connection>scm:git:git@github.com:osmdroid/osmdroid.git</connection>
-        <url>scm:git:git@github.com:osmdroid/osmdroid.git</url>
-        <developerConnection>scm:git:git@github.com:osmdroid/osmdroid.git</developerConnection>
-    </scm>
-
-    <issueManagement>
-        <system>GitHub Issues</system>
-        <url>https://github.com/osmdroid/osmdroid/issues</url>
-    </issueManagement>
-
-    <developers>
-        <!-- TODO -->
-        <developer>
-            <id>id</id>
-            <name>name</name>
-            <roles>
-                <role>developer</role>
-                <role>contributor</role>
-                <role>...</role>
-            </roles>
-        </developer>
-    </developers>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -207,15 +183,6 @@
             </plugins>
         </pluginManagement>
     </build>
-
-    <modules>
-        <module>osmdroid-android</module>
-        <module>osmdroid-android-it</module>
-        <module>osmdroid-third-party</module>
-        <module>OpenStreetMapViewer</module>
-        <module>GoogleWrapperSample</module>
-        <module>OSMMapTilePackager</module>
-    </modules>
 
     <profiles>
         <profile>
