@@ -1,4 +1,22 @@
 apply plugin: 'java'
-sourceSets {
-    main.java.srcDirs = ['src\main\java','src\main\resources','src\test\java','src\test\resources']
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.4'
+}
+
+dependencies {
+    compile group: 'android', name: 'android', version: '4.4.2_r3'
+    compile group: 'org.apache.httpcomponents', name: 'httpmime', version: '4.0.1'
+    compile group: 'org.apache.james', name: 'apache-mime4j', version: '0.6'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.6.1'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.6.1'
+    compile group: 'junit', name: 'junit', version: '4.8.2'
+}
+
+repositories {
+    maven {
+        // This needs to point to your local maven repo
+        url "../../../.m2/repository"
+    }
+    mavenCentral()
 }
