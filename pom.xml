@@ -17,7 +17,7 @@
 
     <name>OSMdroid parent</name>
     <description>An Android library to display OpenStreetMap views.</description>
-    <url>https://github.com/osmdroid/osmdroid</url>
+    <url>https://github.com/mozilla/osmdroid</url>
 
     <licenses>
         <license>
