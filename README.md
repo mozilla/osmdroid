@@ -7,3 +7,6 @@ API) class. It also includes a modular tile provider system with
 support for numerous online and offline tile sources and overlay
 support with built-in overlays for plotting icons, tracking location,
 and drawing shapes.
+
+
+Build instructions are here: https://github.com/mozilla/osmdroid/wiki/Mozilla-OSMDroid
