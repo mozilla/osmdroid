@@ -1,4 +1,4 @@
-MAVEN_REPO=${HOME}/.my/other/repository
+MAVEN_REPO=${HOME}/.mozosmdroid/repository
 MVN=/usr/local/bin/mvn -Dmaven.repo.local=${MAVEN_REPO}
 
 all: jar
@@ -12,7 +12,7 @@ build:
 
 android_sdk:
 	rm -rf maven-android-sdk-deployer
-	git clone git@github.com:mosabua/maven-android-sdk-deployer.git
+	git clone https://github.com/mosabua/maven-android-sdk-deployer.git
 	cd $(shell pwd)/maven-android-sdk-deployer && ${MVN} install -P 4.4
 
 test:
