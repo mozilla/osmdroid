@@ -11,7 +11,7 @@ import android.os.Environment;
  * @author Neil Boyd
  *
  */
-public class OpenStreetMapTileProviderConstants {
+public interface OpenStreetMapTileProviderConstants {
 
 	public static final boolean DEBUGMODE = false;
 	public static final boolean DEBUG_TILE_PROVIDERS = false;
@@ -26,7 +26,7 @@ public class OpenStreetMapTileProviderConstants {
 	public static final int MAXIMUM_ZOOMLEVEL = 22;
 
 	/** Base path for osmdroid files. Zip files are in this folder. */
-	public static File OSMDROID_PATH = new File(Environment.getExternalStorageDirectory(),
+	public static final File OSMDROID_PATH = new File(Environment.getExternalStorageDirectory(),
 			"osmdroid");
 
 	/** Base path for tiles. */
