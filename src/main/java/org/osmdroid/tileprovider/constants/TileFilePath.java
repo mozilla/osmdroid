@@ -4,12 +4,16 @@ import android.os.Environment;
 
 public class TileFilePath {
 
-  public static File directoryOverride;
+  private static File directoryOverride;
 
-  public static File getStorageDirectory() {
-    if (directoryOverride != null) {
-      return directoryOverride;
-    }
-    return new File(Environment.getExternalStorageDirectory(), "osmdroid");
+  public static synchronized void setDirectoryOverride(File f) {
+      directoryOverride = f;
+  }
+
+  public static synchronized File getStorageDirectory() {
+      if (directoryOverride != null) {
+          return directoryOverride;
+      }
+      return new File(Environment.getExternalStorageDirectory(), "osmdroid");
   }
 }

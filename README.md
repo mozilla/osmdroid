@@ -8,5 +8,10 @@ support for numerous online and offline tile sources and overlay
 support with built-in overlays for plotting icons, tracking location,
 and drawing shapes.
 
+This fork breaks API compatibility from OSMDroid.
 
-Build instructions are here: https://github.com/mozilla/osmdroid/wiki/Mozilla-OSMDroid
+# building
+
+GNU Make is your friend.
+
+`make jar` should build you a jar under the target directory.
