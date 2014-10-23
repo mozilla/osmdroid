@@ -1,3 +1,5 @@
+### This code is deprecated and has been merged into Mozilla Stumbler http://github.com/mozilla/mozstumbler
+
 This is a fork of the osmdroid project from: https://github.com/osmdroid/osmdroid
 
 # osmdroid
